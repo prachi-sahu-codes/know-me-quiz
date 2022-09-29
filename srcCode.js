@@ -5,12 +5,12 @@ let score = 0;
 let highScores = [
   {
     name: "Prachi",
-    score: 3,
+    score: 5,
   },
 
   {
     name: "Purvi",
-    score: 2,
+    score: 4,
   },
 ];
 
@@ -24,13 +24,24 @@ let questions = [
     answer: "dalli-rajhara",
   },
   {
-    question: "What is my favourte dish ? ",
+    question: "What is my favourite dish ? ",
     answer: "mushroom noodles",
+  },
+  {
+    question: "What is my favourite color ? ",
+    answer: "black",
+  },
+  {
+    question: "What is my favourite pet ? ",
+    answer: "dog",
   },
 ];
 
 let username = readlineSync.question("What's your name ? ");
-console.log("welcome " + username + " Do you know Prachi ? ");
+console.log("Welcome!! " + username);
+
+let userYn = readlineSync.question("Do you know Prachi ? ");
+console.log("Ok! So lets get started");
 
 function play(question, answer) {
   let useranswer = readlineSync.question(question);
